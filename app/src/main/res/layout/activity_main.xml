@@ -16,7 +16,7 @@
         android:iconifiedByDefault="false"
         android:drawableLeft="@drawable/icon_search"
         android:drawablePadding="15dp"
-        android:backgroundTint="@color/bgcolor"
+        android:backgroundTint="@color/transparent"
         android:elevation="5dp"
         android:ems="10"
         android:queryBackground="@color/transparent"
