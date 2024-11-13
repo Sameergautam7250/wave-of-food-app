@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:textAlignment="center"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/Foodimage_popular"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/foodpopular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/yeon_sung"
+                android:text="FooD Name"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/Foodimage_popular"
+                app:layout_constraintStart_toEndOf="@+id/Foodimage_popular"
+                app:layout_constraintTop_toTopOf="@+id/Foodimage_popular"
+                app:layout_constraintVertical_bias="0.173" />
+
+            <TextView
+                android:id="@+id/foodprice_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="16dp"
+                android:text="$ 7"
+                android:textColor="@color/theme"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/foodpopular"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/addtocart_popular"
+                android:layout_width="70dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/add_cart"
+                android:backgroundTint="@color/theme"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Add Cart"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/foodprice_popular"
+                app:layout_constraintHorizontal_bias="0.415"
+                app:layout_constraintStart_toStartOf="@+id/foodprice_popular"
+                app:layout_constraintTop_toBottomOf="@+id/foodprice_popular" />
+
+            <TextView
+                android:id="@+id/Restroname_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Restro Name"
+                android:textColor="#3B3B3B"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/foodpopular"
+                app:layout_constraintHorizontal_bias="0.368"
+                app:layout_constraintStart_toStartOf="@+id/foodpopular"
+                app:layout_constraintTop_toBottomOf="@+id/foodpopular"
+                app:layout_constraintVertical_bias="0.538" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
